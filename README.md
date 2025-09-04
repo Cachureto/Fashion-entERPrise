@@ -1,6 +1,6 @@
-# ERP - Módulo de Compras
+# ERP - Fashion Enterprise
 
-Este proyecto corresponde al diseño arquitectónico (arc42) del **Módulo de Compras** dentro de un sistema ERP.
+Este proyecto corresponde a la documentación según el diseño arquitectónico (arc42) del ERP **Fashion Enterprise**.
 
 ## Contenido
 
