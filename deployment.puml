@@ -1,0 +1,26 @@
+@startuml Deployment
+!include <C4/C4_Deployment>
+
+title Diagrama de Despliegue - ERP Compras
+
+Deployment_Node(cloud, "Cloud", "AWS") {
+    Deployment_Node(appServer, "Servidor de Aplicaciones", "EC2") {
+        Container(api, "API Backend", "Spring Boot")
+        Container(web, "Web App", "React")
+    }
+
+    Deployment_Node(dbServer, "Servidor de BD", "RDS") {
+        ContainerDb(db, "Base de Datos", "PostgreSQL")
+    }
+}
+
+Deployment_Node(userDevice, "Dispositivo Usuario", "Browser") {
+    Container_Boundary(userApp, "ERP Web") {
+        Container(ui, "Interfaz Web", "React")
+    }
+}
+
+Rel(userDevice, web, "HTTP/HTTPS")
+Rel(appServer, dbServer, "JDBC")
+
+@enduml
