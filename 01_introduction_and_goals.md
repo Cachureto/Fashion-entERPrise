@@ -5,6 +5,6 @@ El sistema **ERP Fashion Enterprise** tiene como objetivo centralizar y optimiza
 ## Requisitos de Negocio del Módulo de Compras
 - Registro y gestión de proveedores.
 - Creación y seguimiento de órdenes de compra.
-- Evaluación de proveedores.
+- Evaluación de proveedores vs. productos.
 - Integración automática con inventario y ventas.
 - Alertas de bajo stock para disparar procesos de compra.
