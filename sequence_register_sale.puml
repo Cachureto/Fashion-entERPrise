@@ -1,0 +1,21 @@
+@startuml Sequence_Register_Sale
+actor Usuario
+participant "Web App" as Web
+participant "API Backend" as API
+participant "Base de Datos" as DB
+participant "Inventario" as Inv
+participant "Contabilidad" as Acc
+
+title Secuencia - Registrar una Orden de Compra
+
+Usuario -> Web: Crear nueva orden de compra
+Web -> API: POST /orders
+API -> DB: Insertar orden de compra
+DB --> API: Confirmación
+
+API -> Inv: Actualizar existencias
+API -> Acc: Registrar factura pendiente
+API --> Web: Respuesta OK
+Web --> Usuario: Orden registrada con éxito
+
+@enduml
