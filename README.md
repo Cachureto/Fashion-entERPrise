@@ -17,23 +17,23 @@
 
 ---
 
-## 📋 Descripción
+## Descripción
 
 **Fashion entERPrise** es un sistema ERP (Enterprise Resource Planning) construido en **C# WinForms** pensado para centralizar los procesos operativos de una empresa distribuidora de ropa: control de **inventario**, **proveedores**, **clientes (CRM)** y **personal (RRHH)**, con el objetivo de dar trazabilidad y visibilidad en tiempo real sobre el estado del negocio.
 
 El proyecto nace como ejercicio de diseño de software aplicando una **arquitectura en capas** (presentación, negocio, datos y entidades) y documentación arquitectónica siguiendo el modelo **arc42**.
 
-## ✨ Módulos principales
+## Módulos principales
 
 | Módulo | Pantalla | Descripción |
 |---|---|---|
-| 🏠 Inicio | `FrmInicio` | Punto de entrada y navegación general del sistema. |
-| 📦 Inventario | `FrmInventario` | Alta, consulta y control de productos en bodega. |
-| 🧾 Proveedores | `FrmCRUDProveedor` | Gestión (CRUD) de proveedores asociados a las compras. |
-| 👥 CRM | `FrmCRM` | Gestión de clientes de la tienda. |
-| 🧑‍💼 RRHH | `FrmRRHH` | Gestión de empleados de la empresa. |
+| Inicio | `FrmInicio` | Punto de entrada y navegación general del sistema. |
+| Inventario | `FrmInventario` | Alta, consulta y control de productos en bodega. |
+| Proveedores | `FrmCRUDProveedor` | Gestión (CRUD) de proveedores asociados a las compras. |
+| CRM | `FrmCRM` | Gestión de clientes de la tienda. |
+| RRHH | `FrmRRHH` | Gestión de empleados de la empresa. |
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El sistema está organizado en 4 proyectos (capas) dentro de la misma solución de Visual Studio:
 
@@ -66,7 +66,7 @@ Fashion_ERP.sln
 - **Documentación de arquitectura:** arc42 + PlantUML
 - **Control de versiones:** Git / GitHub
 
-## 🚀 Puesta en marcha
+## Puesta en marcha
 
 ### Requisitos previos
 
@@ -85,7 +85,7 @@ Fashion_ERP.sln
 4. Configura la cadena de conexión a tu instancia de SQL Server en el `App.config` del proyecto `P_FashionERP` (y en los `app.config` de `capaDatos`).
 5. Compila y ejecuta (F5) con `P_FashionERP` como proyecto de inicio.
 
-## 📁 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 Fashion_ERP/
@@ -99,14 +99,14 @@ Fashion_ERP/
 └── Fashion_ERP.sln        # Solución de Visual Studio
 ```
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Migrar la capa de datos a un ORM (Entity Framework / Dapper).
 - [ ] Módulo de facturación electrónica.
 - [ ] Reportes e indicadores (KPIs) de ventas e inventario.
 - [ ] Evaluar evolución hacia una API + frontend web, conforme a la visión descrita en la documentación arc42.
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las sugerencias y mejoras son bienvenidas. Si quieres contribuir:
 
@@ -114,6 +114,6 @@ Las sugerencias y mejoras son bienvenidas. Si quieres contribuir:
 2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`).
 3. Haz commit de tus cambios y abre un Pull Request.
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto no tiene una licencia definida todavía. Si deseas usarlo o distribuirlo, contacta al autor.
