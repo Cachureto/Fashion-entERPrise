@@ -1,0 +1,21 @@
+@startuml C1_Context
+!include <C4/C4_Context>
+
+title Diagrama de Contexto - ERP Compras
+
+Person(user, "Usuario Compras", "Empleado que gestiona órdenes de compra")
+Person(supplier, "Proveedor", "Externo que recibe órdenes y envía facturas")
+
+System(erp, "ERP - Módulo de Compras", "Gestiona proveedores, órdenes de compra y facturas")
+
+System_Ext(inventory, "Módulo de Inventario", "Actualiza existencias según compras")
+System_Ext(accounting, "Módulo de Contabilidad", "Registra obligaciones y pagos")
+System_Ext(bank, "Sistema Bancario", "Procesa pagos a proveedores")
+
+Rel(user, erp, "Gestiona órdenes de compra")
+Rel(supplier, erp, "Recibe órdenes y envía facturas")
+Rel(erp, inventory, "Envía productos comprados")
+Rel(erp, accounting, "Registra facturas y pagos")
+Rel(accounting, bank, "Procesa transferencias")
+
+@enduml

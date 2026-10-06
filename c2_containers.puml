@@ -1,0 +1,20 @@
+@startuml C2_Containers
+!include <C4/C4_Container>
+
+title Diagrama de Contenedores - ERP Compras
+
+System_Boundary(erp, "ERP - Compras") {
+    Container(web, "Web App", "React", "Interfaz de usuario para gestionar compras")
+    Container(api, "API Backend", "Spring Boot", "Expone servicios REST para compras")
+    Container(db, "Base de Datos", "PostgreSQL", "Almacena proveedores, órdenes y facturas")
+}
+
+System_Ext(inventory, "Inventario")
+System_Ext(accounting, "Contabilidad")
+
+Rel(web, api, "Usa")
+Rel(api, db, "Lee/Escribe")
+Rel(api, inventory, "Envía información de productos")
+Rel(api, accounting, "Envía facturas y pagos")
+
+@enduml
