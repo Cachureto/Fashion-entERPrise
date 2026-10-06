@@ -56,7 +56,7 @@ Fashion_ERP.sln
 
 ![Modelo Entidad-Relación](./ModeloEntidadRelacion.png)
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **Lenguaje:** C#
 - **Framework:** .NET Framework 4.7.2
